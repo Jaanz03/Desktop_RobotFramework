@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.2 on win32)" generated="20240830 17:43:34.122" rpa="false" schemaversion="4">
+<suite id="s1" name="Demodesktop" source="C:\Users\vjansi\PycharmProjects\POC_desktop_app_FlaUI\TestCases_demo\demodesktop.robot">
+<test id="s1-t1" name="Launch Desktop Applications" line="10">
+<kw name="Open Calculator and Perform Add Operation" library="calc_keywords">
+<doc>This keyword is used to perfom add operation</doc>
+<kw name="Launch Application" library="FlaUILibrary">
+<arg>${app_file}</arg>
+<doc>Launches an application.</doc>
+<status status="PASS" starttime="20240830 17:43:35.019" endtime="20240830 17:43:35.555"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Eight"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:43:35.555" endtime="20240830 17:43:46.562"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Plus"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:43:46.562" endtime="20240830 17:43:47.556"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Two"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:43:47.557" endtime="20240830 17:43:48.697"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Equals"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:43:48.697" endtime="20240830 17:43:49.552"/>
+</kw>
+<kw name="Get Name From Element" library="FlaUILibrary">
+<var>${actual_results}</var>
+<arg>//Text[@AutomationId="CalculatorResults"]</arg>
+<doc>Return name value from element.</doc>
+<msg timestamp="20240830 17:43:50.235" level="INFO">${actual_results} = Display is 10</msg>
+<status status="PASS" starttime="20240830 17:43:49.552" endtime="20240830 17:43:50.235"/>
+</kw>
+<kw name="Take Screenshot" library="FlaUILibrary">
+<doc>Takes a screenshot of the whole desktop or the element, from the optionally provided identifier. 
+Returns screenshot depending on log mode.
+Screenshot mode File -&gt; returns filepath
+Screenshot mode Base64 -&gt; returns encoded base64 string of image</doc>
+<msg timestamp="20240830 17:43:50.558" level="INFO">test_vjansi-lp_launch_desktop_applications_1725020030236_1.jpg</msg>
+<msg timestamp="20240830 17:43:50.559" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="test_vjansi-lp_launch_desktop_applications_1725020030236_1.jpg"&gt;&lt;img src="test_vjansi-lp_launch_desktop_applications_1725020030236_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240830 17:43:50.235" endtime="20240830 17:43:50.563"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"Add Result in ${actual_results}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240830 17:43:50.563" endtime="20240830 17:43:50.564"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Clear"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:43:50.564" endtime="20240830 17:43:52.015"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Close Calculator"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:43:52.015" endtime="20240830 17:43:53.107"/>
+</kw>
+<status status="PASS" starttime="20240830 17:43:35.018" endtime="20240830 17:43:53.108"/>
+</kw>
+<kw name="Open Calculator and Perform Subtract Operation" library="calc_keywords">
+<doc>This keyword is used to perfom add operation</doc>
+<kw name="Launch Application" library="FlaUILibrary">
+<arg>${app_file}</arg>
+<doc>Launches an application.</doc>
+<status status="PASS" starttime="20240830 17:43:53.113" endtime="20240830 17:43:53.242"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Eight"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:43:53.242" endtime="20240830 17:44:07.693"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Minus"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:44:07.694" endtime="20240830 17:44:08.725"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Two"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:44:08.726" endtime="20240830 17:44:10.482"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Equals"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:44:10.483" endtime="20240830 17:44:11.572"/>
+</kw>
+<kw name="Get Name From Element" library="FlaUILibrary">
+<var>${actual_results}</var>
+<arg>//Text[@AutomationId="CalculatorResults"]</arg>
+<doc>Return name value from element.</doc>
+<msg timestamp="20240830 17:44:12.066" level="INFO">${actual_results} = Display is 6</msg>
+<status status="PASS" starttime="20240830 17:44:11.572" endtime="20240830 17:44:12.066"/>
+</kw>
+<kw name="Take Screenshot" library="FlaUILibrary">
+<doc>Takes a screenshot of the whole desktop or the element, from the optionally provided identifier. 
+Returns screenshot depending on log mode.
+Screenshot mode File -&gt; returns filepath
+Screenshot mode Base64 -&gt; returns encoded base64 string of image</doc>
+<msg timestamp="20240830 17:44:12.249" level="INFO">test_vjansi-lp_launch_desktop_applications_1725020052066_2.jpg</msg>
+<msg timestamp="20240830 17:44:12.249" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="test_vjansi-lp_launch_desktop_applications_1725020052066_2.jpg"&gt;&lt;img src="test_vjansi-lp_launch_desktop_applications_1725020052066_2.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240830 17:44:12.066" endtime="20240830 17:44:12.252"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"Subtract Result in ${actual_results}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240830 17:44:12.252" endtime="20240830 17:44:12.253"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Clear"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:44:12.253" endtime="20240830 17:44:13.717"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Close Calculator"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:44:13.717" endtime="20240830 17:44:14.213"/>
+</kw>
+<status status="PASS" starttime="20240830 17:43:53.111" endtime="20240830 17:44:14.216"/>
+</kw>
+<kw name="Open Zoom and Perform Sign-In" library="zoom_keywords">
+<doc>This keyword is used to open zoom and sign-in</doc>
+<kw name="Launch Application" library="FlaUILibrary">
+<arg>${zoom_app_file}</arg>
+<doc>Launches an application.</doc>
+<status status="PASS" starttime="20240830 17:44:14.220" endtime="20240830 17:44:14.570"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Sign in"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:44:14.570" endtime="20240830 17:44:30.118"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>NONE</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="PASS" starttime="20240830 17:44:30.118" endtime="20240830 17:44:30.119"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Edit[@Name="Enter your email"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240830 17:44:30.120" endtime="20240830 17:44:31.411"/>
+</kw>
+<kw name="Set Text To Textbox" library="FlaUILibrary">
+<arg>//Edit[@Name="Enter your email"]</arg>
+<arg>jxyz@gmail.com</arg>
+<doc>Inputs value to a textbox module.</doc>
+<status status="FAIL" starttime="20240830 17:44:31.411" endtime="20240830 17:44:33.094"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>INFO</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="NOT RUN" starttime="20240830 17:44:33.512" endtime="20240830 17:44:33.512"/>
+</kw>
+<kw name="Take Screenshot" library="FlaUILibrary">
+<doc>Takes a screenshot of the whole desktop or the element, from the optionally provided identifier. 
+Returns screenshot depending on log mode.
+Screenshot mode File -&gt; returns filepath
+Screenshot mode Base64 -&gt; returns encoded base64 string of image</doc>
+<status status="NOT RUN" starttime="20240830 17:44:33.513" endtime="20240830 17:44:33.513"/>
+</kw>
+<status status="FAIL" starttime="20240830 17:44:14.219" endtime="20240830 17:44:33.514"/>
+</kw>
+<status status="FAIL" starttime="20240830 17:43:35.018" endtime="20240830 17:44:33.515">NotImplementedException: The method or operation is not implemented.
+   at Interop.UIAutomationClient.IUIAutomationValuePattern.SetValue(String val)
+   at FlaUI.Core.Tools.Com.Call(Action nativeAction)
+   at FlaUI.Core.AutomationElements.TextBox.set_Text(String value)</status>
+</test>
+<status status="FAIL" starttime="20240830 17:43:34.125" endtime="20240830 17:44:33.516"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demodesktop">Demodesktop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.2 on win32)" generated="20240828 11:45:04.723" rpa="false" schemaversion="4">
+<suite id="s1" name="Demorpa" source="C:\Users\vjansi\PycharmProjects\POC_desktop_app_FlaUI\TestCases_demo\demorpa.robot">
+<test id="s1-t1" name="Launch Zoom" line="5">
+<kw name="Launch Application" library="FlaUILibrary">
+<arg>calc.exe</arg>
+<doc>Launches an application.</doc>
+<status status="PASS" starttime="20240828 11:45:05.423" endtime="20240828 11:45:05.852"/>
+</kw>
+<kw name="Click" library="FlaUILibrary">
+<arg>//Button[@Name="Eight"]</arg>
+<doc>Left click to element by an XPath.</doc>
+<status status="PASS" starttime="20240828 11:45:05.853" endtime="20240828 11:45:07.927"/>
+</kw>
+<status status="PASS" starttime="20240828 11:45:05.422" endtime="20240828 11:45:07.928"/>
+</test>
+<status status="PASS" starttime="20240828 11:45:04.726" endtime="20240828 11:45:07.930"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Demorpa">Demorpa</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
